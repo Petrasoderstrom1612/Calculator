@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>Choose an operator and perform a mathematical operation</h2>
+<div class="buttons">
+    <button onclick="setOperator('+')">+</button>
+    <button onclick="setOperator('-')">-</button>
+    <button onclick="setOperator('*')">*</button>
+    <button onclick="setOperator('/')">/</button>
+</div>
+<div class="container">
+    <div class="input-wrapper">
+        <input type="text" id="num1-el" placeholder="0">
+    </div>
+    <div id="operatorArea" class="input-wrapper">
+        <span id="operator">&nbsp;</span>
+    </div>
+    <div class="input-wrapper">
+        <input type="text" id="num2-el" placeholder="0">
+    </div>
+<button class="equal" onclick="calculate()">=</button>
+<p class="result" id="sum-el"></p>
+</div>
+<button class="reset" onclick="reset()">RESET</button>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
